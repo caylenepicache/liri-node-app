@@ -9,19 +9,14 @@ var keys = ('./keys.js');
 var spotifyKey = new Spotify(keys.spotify);
 var clientTwitter = new Twitter(keys.twitter);
 
+var userInput = process.argv[2];
 
-console.log(process.argv[1]);
-var userInput = process.argv.slice(3).join('+');
-console.log(userInput);
-
-
-
-/*
 if (userInput === "spotify-this-song") {
-  if (!process.argv[3]) {
-    doSpotify();
-  }
-}
+  if (!process.argv[3]){
+      doSpotify();
+      } else {
+        console.log("lol no")
+}}
 
 function doSpotify() {
 
@@ -41,5 +36,4 @@ function doSpotify() {
       console.log("=============================================");
     });
   
-}; 
-*/
+};
